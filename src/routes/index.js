@@ -2,9 +2,10 @@ const router = require('express').Router();
 
 // importamos los routes
 const homeRoute = require('./home');
-
+const imagesRoute = require('./images');
 // paths con su propio route
 router.use('/home', homeRoute);
+router.use('/images', imagesRoute);
 
 // path con retorno directo
 router.route('/').get((req, res) => {
